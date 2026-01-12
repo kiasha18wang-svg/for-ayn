@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Aina</title>
+    <style>
+        body {
+            background-color: #2b0a0f; /* dark red background */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: #fff5f7; /* soft light red */
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            max-width: 360px;
+        }
+
+        h1 {
+            color: #8b0000; /* dark red */
+        }
+
+        p {
+            font-size: 16px;
+            color: #3a0a0a;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .yes {
+            background-color: #8b0000; /* dark red */
+            color: white;
+        }
+
+        .no {
+            background-color: #c4a3a3; /* muted red */
+            color: #3a0a0a;
+        }
+
+        .yes:hover {
+            background-color: #a30000;
+        }
+
+        .no:hover {
+            background-color: #b08c8c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Hi, Aina ❤️</h1>
+
+    <p id="text">
+        We started slow, but as time passed,
+        I realized I like you more than just talking.
+    </p>
+
+    <div id="buttons">
+        <button class="yes" onclick="yes()">Yes ❤️</button>
+        <button class="no" onclick="no()">No 🙈</button>
+    </div>
+</div>
+
+<script>
+    function yes() {
+        document.getElementById("text").innerHTML =
+        "You just made me the happiest person. 🥹❤️<br><br>Thank you for choosing me.";
+        document.getElementById("buttons").style.display = "none";
+    }
+
+    function no() {
+        document.getElementById("text").innerHTML =
+        "It's okay. ❤️ Thank you for being honest.<br><br>I still appreciate you.";
+        document.getElementById("buttons").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
